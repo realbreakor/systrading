@@ -13,8 +13,7 @@ CERT = os.getenv('CERT')
 MOUI_ID_PSWD = os.getenv('MOUI_ID_PSWD')
 MOUI_PSWD = os.getenv('MOUI_PSWD')
 
-BASE_DIR = os.path.expanduser("~/Documents/PycharmProjects/systrading/")
-FUN_DIR = os.path.expanduser("~/")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + os.sep
 
 logging.basicConfig(
     filename=BASE_DIR + 'order_log.txt',
